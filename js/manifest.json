@@ -1,6 +1,6 @@
 {
-    "name": "Sahan Sexy Boy",
-    "short_name": "Call me or Msg Me",
+    "name": "Sahan Store",
+    "short_name": "Sahan App",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#8000ff",
@@ -24,13 +24,13 @@
     ],
     "screenshots": [
       {
-        "src": "./images/desktop.png",
+        "src": "images/desktop.png",
         "sizes": "1280x720",
         "type": "image/png",
         "form_factor": "wide"
       },
       {
-        "src": "./images/mobile.png",
+        "src": "images/mobile.png",
         "sizes": "375x667",
         "type": "image/png",
         "form_factor": "narrow"
