@@ -4,14 +4,16 @@ body {
     padding: 0;
     background-color: #f8f8f8;
 }
+
 header, footer, .intro, .feature, .lists {
     padding: 20px;
     background-color: #ffffff;
 }
 
-.header{
-    background: radial-gradient(#fff,#000000);
+.header {
+    background: radial-gradient(#fff, #000000);
 }
+
 .footer {
     background-color: #000000;
     color: rgb(246, 246, 246);
@@ -20,7 +22,8 @@ header, footer, .intro, .feature, .lists {
 .header .logo img, .footer img {
     width: 100px;
 }
-.cart{
+
+.cart {
     padding-right: 130px;
 }
 
@@ -28,6 +31,7 @@ header, footer, .intro, .feature, .lists {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .navbar ul {
@@ -51,7 +55,8 @@ header, footer, .intro, .feature, .lists {
     color: rgb(202, 76, 76);
     cursor: pointer;
 }
-h1, h2 ,h3{
+
+h1, h2, h3 {
     text-align: center;
     color: #333;
 }
@@ -130,48 +135,49 @@ tfoot {
     color: #3c763d;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-nav{
+nav {
     flex: 1;
     text-align: right;
 }
-nav ul{
+
+nav ul {
     display: inline-block;
     list-style-type: none;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     margin-right: 20px;
-
 }
-#menubtn{
+
+#menubtn {
     color: transparent;
     background-color: transparent;
     z-index: -100;
 }
-a{
+
+a {
     text-decoration: none;
-    color:#555;
-}
-p{
     color: #555;
 }
-.container{
+
+p {
+    color: #555;
+}
+
+.container {
     max-width: 1300px;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0 25px;
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 main {
     padding: 2em;
 }
@@ -217,6 +223,7 @@ main {
 .order-form button:hover {
     background-color: #c02929;
 }
+
 footer .grid {
     display: flex;
     background-color: #000000;
@@ -245,12 +252,13 @@ hr {
     padding: 10px 0;
 }
 
-@media(max-width:900px){
-    .cat{
+@media (max-width: 900px) {
+    .cat {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
     }
-    .navbar .menu{
+
+    .navbar .menu {
         padding-top: 10px;
         margin-top: 10px;
         display: none;
@@ -260,39 +268,38 @@ hr {
         z-index: 100;
         background-color: #ffffff;
         width: 100%;
-        padding: 0px;
-        margin: 0px;
-        border-bottom: 1px solid rgba(245,245,245);
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid rgba(245, 245, 245, 0.5);
     }
-    
-    .navbar .menu li{
+
+    .navbar .menu li {
         width: 100%;
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
         background-color: #ffffff;
     }
 
-   
-.navbar .menu li a{
-    background-color: #ffffff;
-    color: black;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    padding: 30px 20px;
-    margin: 0px;
-    border: 1px solid rgba(248,247,247,0.5);
-}
-    .menuicon{
+    .navbar .menu li a {
+        background-color: #ffffff;
+        color: black;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 30px 20px;
+        margin: 0;
+        border: 1px solid rgba(248, 247, 247, 0.5);
+    }
+
+    .menuicon {
         display: block;
         padding-top: 10px;
         margin-top: 20px;
         color: white;
-
     }
-    
-    .navbar .menuicon{
+
+    .navbar .menuicon {
         cursor: pointer;
         float: right;
         padding: 5px;
@@ -300,8 +307,8 @@ hr {
         user-select: none;
         z-index: 2;
     }
-    
-    .navbar .menuicon .navicon{
+
+    .navbar .menuicon .navicon {
         background-color: #ffffffcc;
         display: block;
         height: 2px;
@@ -309,9 +316,9 @@ hr {
         position: relative;
         transition: background 0.2s ease-out;
     }
-    
+
     .navbar .menuicon .navicon::before,
-    .navbar .menuicon .navicon::after{
+    .navbar .menuicon .navicon::after {
         background-color: #ffffffcc;
         content: '';
         display: block;
@@ -320,32 +327,31 @@ hr {
         height: 100%;
         transition: all ease-out 0.2s;
     }
-    .navbar .menuicon .navicon::before{
+
+    .navbar .menuicon .navicon::before {
         top: 7px;
     }
-    
-    .navbar .menuicon .navicon::after{
+
+    .navbar .menuicon .navicon::after {
         top: -7px;
     }
-    
+
     .navbar .menubtn:checked ~ .menuicon .navicon::before {
         transform: rotate(-45deg);
-        top: 0px;
+        top: 0;
     }
-   
-    
+
     .navbar .menubtn:checked ~ .menuicon .navicon::after {
         transform: rotate(45deg);
-        top: 0px;
+        top: 0;
     }
-    
+
     .navbar .menubtn:checked ~ .menuicon .navicon {
         background-color: transparent;
         color: transparent;
     }
-    
-    .navbar .menubtn:checked ~ .menu{
+
+    .navbar .menubtn:checked ~ .menu {
         display: block;
     }
-
 }
