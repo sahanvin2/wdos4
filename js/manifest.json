@@ -1,7 +1,7 @@
 {
     "name": "Sahan Sexy Boy",
     "short_name": "Call me or Msg Me",
-    "start_url": "./index.html",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "#8000ff",
     "theme_color": "black",
