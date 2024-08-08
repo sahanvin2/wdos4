@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="../css/Items.css">
+    <link rel="manifest" href="../manifest.json"/>
+</head>
+<body>
+<!-- Header Section -->
+<header class="header">
+    <section class="container">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                <img src="../images/unnamed (1).png" width="100px" alt="Logo">
+            </a>
+            <input type="checkbox" id="menubtn" class="menubtn">
+             <label for="menubtn" class="menuicon">
+             <div class="navicon"></div>
+             </label>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="productsdai.html">Dairy Products</option>
+                        <option value="productscos.html">Cosmetic items</option>
+                        <option value="productsveg.html">Vegitables</option>
+                        <option value="Fruits.html">Fruits</option>
+                        <option value="meatandseafood.html">Meat and Sea Food</option>
+                        <option value="Bakingandcooking.html">Baking and Cooking Ingredients</option>
+                    </select>
+                </li>
+                <li><a href="../html/about-index.html">About</a></li>
+                <li><a href="../html/loyalty.html">Loyalty</a></li>
+                <li><a href="../html/account.html">Account</a></li>
+            </ul>
+            <a href="../html/orderpage.html"><img src="../images/cart.png" width="30px" height="30px" class="cart" alt="Cart"></a>
+        </nav>
+    </section>
+</header>
+    <h1>Order Groceries</h1>
+    <form id="grocery-form">
+        <!--fruits section-->
+        <section>
+            <h2>Fruits</h2>
+            <div class="item">
+                <img src="../images/apple.jpeg" alt="Apple">
+                <label for="apple">Apple (Rs.550.00/per kg):</label>
+                <input type="number" id="apple" name="apple" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="apple">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/banana.jpg" alt="Banana">
+                <label for="banana">Banana (Rs.200.00/per kg):</label>
+                <input type="number" id="banana" name="banana" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="banana">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/pine_apple.webp" alt="orange">
+                <label for="orange">Oragne(Rs.400.00/per kg):</label>
+                <input type="number" id="orange" name="orange" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="orange">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/water_melon.jpg" alt="melon">
+                <label for="melon">Water Melon (Rs.100.00/per kg):</label>
+                <input type="number" id="melon" name="melon" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="melon">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/pine_apple.webp" alt="pineapple">
+                <label for="pineapple">Pine Apple (Rs.500.00/per kg):</label>
+                <input type="number" id="pineapple" name="pineapple" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="pineapple">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/wood_apple.jpg" alt="woodappple">
+                <label for="woodapple">woodapple (Rs.300.00/per kg):</label>
+                <input type="number" id="woodapple" name="woodapple" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="woodapple">Add</button>
+            </div>
+            <!-- Vegies section -->
+        </section>
+        <section>
+            <h2>Vegetables</h2>
+            <div class="item">
+                <img src="../images/tomato.webp" alt="Tomato">
+                <label for="tomato">Tomato (R.200.00/per kg):</label>
+                <input type="number" id="tomato" name="tomato" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="tomato">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/potato.webp" alt="Potato">
+                <label for="potato">Potato (Rs.300.00/per kg):</label>
+                <input type="number" id="potato" name="potato" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="potato">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/carrot.jpg" alt="Carrot">
+                <label for="carrot">Carrot (Rs.500.00/per kg):</label>
+                <input type="number" id="carrot" name="carrot" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="carrot">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/lettuce.webp" alt="Lettuce">
+                <label for="lettuce">Lettuce (Rs.600.00/per kg):</label>
+                <input type="number" id="lettuce" name="lettuce" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="lettuce">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/pumkin.jpeg" alt="pumkin">
+                <label for="pumkin">umkin (Rs.150.00/per kg):</label>
+                <input type="number" id="pumkin" name="pumkin" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="pumkin">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/beans.jpeg" alt="beans">
+                <label for="beans"> (Rs.400.00/per kg):</label>
+                <input type="number" id="beans" name="beans" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="beans">Add</button>
+            </div>
+            <!-- Dairy items -->
+        </section>
+        <section>
+            <h2>Dairy Produce</h2>
+            <div class="item">
+                <img src="../images/Milk.jpg" alt="Milk">
+                <label for="milk">Milk (Rs.550.00/quantity):</label>
+                <input type="number" id="milk" name="milk" min="0">
+                <button type="button" class="add-button" data-item="milk">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/cheese.jpeg" alt="Cheese">
+                <label for="cheese">Cheese (Rs.2000.00/quantity):</label>
+                <input type="number" id="cheese" name="cheese" min="0">
+                <button type="button" class="add-button" data-item="cheese">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/butter.png" alt="Butter">
+                <label for="butter">Butter (Rs.1500.00/quantity):</label>
+                <input type="number" id="butter" name="butter" min="0">
+                <button type="button" class="add-button" data-item="butter">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/yogurt.jpg" alt="yogurt">
+                <label for="yogurt">Yogurt (Rs.100.00/quantity):</label>
+                <input type="number" id="yogurt" name="yogurt" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="yogurt">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/ice-cream.webp" alt="icecream">
+                <label for="icecream">Icecream (Rs.800.00/per kg):</label>
+                <input type="number" id="icecream" name="icecream" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="icecream">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/curd.webp" alt="curd">
+                <label for="curd">Curd (Rs.700.00/per kg):</label>
+                <input type="number" id="curd" name="curd" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="curd">Add</button>
+            </div>
+            <!-- Meat and sea food  -->
+        </section>
+        <section>
+            <h2>Meat and Seafood</h2>
+            <div class="item">
+                <img src="../images/chicken.jpg" alt="chicken">
+                <label for="chicken">Chicken (Rs.1550.00/per kg):</label>
+                <input type="number" id="chicken" name="chicken" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="chicken">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/tuna.png" alt="fish">
+                <label for="fish">Fish (Rs.1700.00/per kg):</label>
+                <input type="number" id="fish" name="fish" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="fish">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/tin_fish.jpeg" alt="tin_fish">
+                <label for="tin_fish">Tin Fish (Rs.600.00/per kg):</label>
+                <input type="number" id="tin_fish" name="tin_fish" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="tin_fish">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/isso.avif" alt="prawns">
+                <label for="prawns">prawns (Rs.2500.00/per kg):</label>
+                <input type="number" id="prawns" name="prawns" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="prawns">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/crab.webp" alt="crab">
+                <label for="crab">Crab (Rs.4800.00/per kg):</label>
+                <input type="number" id="crab" name="crab" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="crab">Add</button>
+            </div>
+
+            <!-- Baking and cooking identials -->
+        </section>
+        <section>
+            <h2>Baking and Cooking Ingredients</h2>
+            <div class="item">
+                <img src="../images/wheatfloar.jpg" alt="Flour">
+                <label for="flour">Flour (Rs.250.00/quantity):</label>
+                <input type="number" id="flour" name="flour" min="0">
+                <button type="button" class="add-button" data-item="flour">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/suger.jpg" alt="Sugar">
+                <label for="sugar">Sugar (Rs.200.00/quantity):</label>
+                <input type="number" id="sugar" name="sugar" min="0">
+                <button type="button" class="add-button" data-item="sugar">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/saltsl.jpg" alt="Salt">
+                <label for="salt">Salt (Rs.200.00/quantity):</label>
+                <input type="number" id="salt" name="salt" min="0">
+                <button type="button" class="add-button" data-item="salt">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/rice.webp" alt="rice">
+                <label for="rice">Rice (Rs.200.00/per kg):</label>
+                <input type="number" id="rice" name="rice" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="rice">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/baking_soda.webp" alt="baking_soda">
+                <label for="baking_soda">Baking_soda (Rs.100.00/quantity):</label>
+                <input type="number" id="baking_soda" name="baking_soda" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="baking_soda">Add</button>
+            </div>
+            <div class="item">
+                <img src="../images/soupcube.jpg" alt="soupcube">
+                <label for="soupcube">Soup Cube (Rs.150.00/quantity):</label>
+                <input type="number" id="soupcube" name="soupcube" min="0" step="0.1">
+                <button type="button" class="add-button" data-item="soupcube">Add</button>
+            </div>
+            <!-- Add more ingredients here -->
+        </section>
+        <button type="button" id="add-to-favourites">Add to Favourites</button>
+        <button type="button" id="apply-favourites">Apply Favourites</button>
+        <button type="button" id="clear-favourites">Clear Favourites</button>
+        <button type="button" id="buy-now">Buy Now</button>
+    </form>
+    <h2>Current Order</h2>
+    <table id="order-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Order items will be added here dynamically -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="total-price">0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="../js/main.js"></script>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <section class="container">
+        <section class="grid">
+            <article>
+                <h3>Download Our App</h3>
+                <p>Download app for Android and iOS mobile phone.</p>
+                <figure class="app-logo">
+                    <img src="../images/play-store.png" alt="Play Store">
+                    <img src="../images/app-store.png" alt="App Store">
+                </figure>
+            </article>
+            <article>
+                <img src="../images/unnamed (1).png" alt="Logo">
+                <p>Way to the home</p>
+            </article>
+            <article>
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </article>
+        </section>
+    </section>
+    <hr>
+    <p class="copyright">&copy; Copyright 2024 Fresh Details</p>
+  </footer>
+</body>
+</html>

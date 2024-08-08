@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Registration</title>
+    <link rel="stylesheet" href="../css/loyalty.css">
+    <link rel="manifest" href="../manifest.json"/>
+</head>
+<body>
+
+
+<!-- Header Section -->
+
+<header class="header">
+    <section class="container">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                <img src="../images/unnamed (1).png" width="100px" alt="Logo">
+            </a>
+            <input type="checkbox" id="menubtn" class="menubtn">
+             <label for="menubtn" class="menuicon">
+             <div class="navicon"></div>
+             </label>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="productdai.html">Dairy Products</option>
+                        <option value="productscos.html">Cosmetic items</option>
+                        <option value="productsveg.html">Vegitables</option>
+                        <option value="Fruits.html">Fruits</option>
+                        <option value="meatandseafood.html">Meat and Sea Food</option>
+                        <option value="Bakingandcooking.html">Baking and Cooking Ingredients</option>
+                    </select>
+                </li>
+                <li><a href="../html/about-index.html">About</a></li>
+                <li><a href="../html/loyalty.html">Loyalty</a></li>
+                <li><a href="../html/account.html">Account</a></li>
+            </ul>
+            <a href="../html/orderpage.html"><img src="../images/cart.png" width="30px" height="30px" class="cart" alt="Cart"></a>
+        </nav>
+    </section>
+</header>
+
+    <section>
+        <h1>Welcome to Loyalty</h1>
+    </section>
+    <section class="intro">
+        <figure>
+            <img src="../images/helping3.jpg" width="700px" alt="Banner">
+        </figure>
+    </section>
+
+    <main>
+        <section class="benefits">
+            <h2>Loyalty Program Benefits</h2>
+            <ul>
+                <li id="basic"><strong>Basic Member:</strong> 5% discount on all purchases, access to special promotions.</li>
+                <li id="standard"><strong>Standard Member:</strong> 10% discount on all purchases, access to special promotions, free delivery for online orders.</li>
+                <li id="Premium"><strong>Premium Member:</strong> 15% discount on all purchases, access to special promotions, free delivery for online orders, exclusive invites to member-only events.</li>
+            </ul>
+        </section>
+        <section class="points">
+            <article class="gain">
+                <h2>Quality Foods</h2>
+                <p>“Quality is not an act, it is a habit.” -Aristotle.</p>
+                <img src="../images/supermarket2.avif" class="gain-img">
+            </article>
+            <article class="gain">
+                <h2>Sava Money</h2>
+                <p>allows you to create a safety net for your future expenses as well as unplanned financial needs.</p>
+                <img src="../images/save1.png" class="gain-img">
+            </article>
+            <article class="gain">
+                <h2>Free Delivery</h2>
+                <p>You can save your money and time.</p>
+                <img src="../images/delivery.jpg" class="gain-img">
+            </article>
+        </section>
+
+<!---registation---->
+        <section class="registration-form">
+            <h2>Register for Our Loyalty Program</h2>
+            <form action="submit_loyalty.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="scheme">Choose Your Loyalty Scheme:</label>
+                <select id="scheme" name="scheme" required>
+                    <option value="Bronze">Bronze Member</option>
+                    <option value="Silver">Silver Member</option>
+                    <option value="Gold">Gold Member</option>
+                </select>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+<!----footer-->
+
+
+  <footer class="footer">
+  <section class="container">
+      <section class="grid">
+          <article>
+              <h3>Download Our App</h3>
+              <p>Download app for Android and iOS mobile phone.</p>
+              <figure class="app-logo">
+                  <img src="../images/play-store.png" alt="Play Store">
+                  <img src="../images/app-store.png" alt="App Store">
+              </figure>
+          </article>
+          <article>
+              <img src="../images/unnamed (1).png" alt="Logo">
+              <p>Way to the home</p>
+          </article>
+          <article>
+              <h3>Useful Links</h3>
+              <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join Affiliate</li>
+              </ul>
+          </article>
+          <article>
+              <h3>Follow Us</h3>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Telegram</a></li>
+                  <li><a href="#">Youtube</a></li>
+              </ul>
+          </article>
+      </section>
+  </section>
+  <hr>
+  <p class="copyright">&copy; Copyright 2024 Fresh Details</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fresh Colombo</title>
+    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="manifest" href="../manifest.json"/>
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <section class="container">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                <img src="../images/unnamed (1).png" width="100px" alt="Logo">
+            </a>
+            <input type="checkbox" id="menubtn" class="menubtn">
+             <label for="menubtn" class="menuicon">
+             <div class="navicon"></div>
+             </label>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="productsdai.html">Dairy Products</option>
+                        <option value="productscos.html">Cosmetic items</option>
+                        <option value="productsveg.html">Vegitables</option>
+                        <option value="Fruits.html">Fruits</option>
+                        <option value="meatandseafood.html">Meat and Sea Food</option>
+                        <option value="Bakingandcooking.html">Baking and Cooking Ingredients</option>
+                    </select>
+                </li>
+                <li><a href="../html/about-index.html">About</a></li>
+                <li><a href="../html/loyalty.html">Loyalty</a></li>
+                <li><a href="../html/account.html">Account</a></li>
+            </ul>
+            <a href="../html/orderpage.html"><img src="../images/cart.png" width="30px" height="30px" class="cart" alt="Cart"></a>
+        </nav>
+    </section>
+</header>
+
+<!-- About Us Section -->
+<section id="about-us">
+    <h1>About Us</h1>
+    <p>Welcome to Fresh Colombo, your trusted supermarket. We have multiple branches to serve you better.</p>
+
+    <!-- Branches Section -->
+    <section class="branches">
+        <article class="branch">
+            <h2>Fresh Colombo - Main Shop</h2>
+            <p>Main Street, Colombo</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15839.694677496932!2d79.8561808219337!3d6.927078114380245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a203b7e8c7f%3A0x561eaae0212ae7b6!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2sin!4v1632424566064!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <img src="../images/fresh-colombo.jpg" class=branch-image>
+            <p>ijpgpsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </article>
+        <article class="branch">
+            <h2>Fresh Kandy - Kandy Branch</h2>
+            <p>Kandy Road, Kandy</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25865.576219949224!2d80.63383270902334!3d7.285561223930956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1716128398265!5m2!1sen!2slk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="../images/fresh-kandy.webp" alt="Kandy Branch" class="branch-image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </article>
+        <article class="branch">
+            <h2>Fresh Galle - Galle Branch</h2>
+            <p>Beach Road, Galle</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17814.310742519985!2d80.22793040141124!3d6.037662659741425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1716128601714!5m2!1sen!2slk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="../images/fresh-galle1.jpg" alt="Galle Branch" class="branch-image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </article>
+    </section>
+
+    <!-- Services Table -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Delivery</td>
+                    <td>Get your groceries delivered to your doorstep.</td>
+                    <td>Available in all branches</td>
+                </tr>
+                <tr>
+                    <td>Whole Sale</td>
+                    <td>We are best fresh food saller.</td>
+                    <td>Available in Colombo and Kandy branches</td>
+                </tr>
+                <tr>
+                    <td>Fresh Banking</td>
+                    <td>Fresh bank provides a complete suite for products and services for Agricultural Sector needs..</td>
+                    <td>Available in Colombo branch only</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><a href="#">To learn more</a></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+</section>
+<!-- Footer Section -->
+<footer class="footer">
+  <section class="container">
+      <section class="grid">
+          <article>
+              <h3>Download Our App</h3>
+              <p>Download app for Android and iOS mobile phone.</p>
+              <figure class="app-logo">
+                  <img src="../images/play-store.png" alt="Play Store">
+                  <img src="../images/app-store.png" alt="App Store">
+              </figure>
+          </article>
+          <article>
+              <img src="../images/unnamed (1).png" alt="Logo">
+              <p>Way to the home</p>
+          </article>
+          <article>
+              <h3>Useful Links</h3>
+              <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join Affiliate</li>
+              </ul>
+          </article>
+          <article>
+              <h3>Follow Us</h3>
+              <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Telegram</a></li>
+                  <li><a href="#">Youtube</a></li>
+              </ul>
+          </article>
+      </section>
+  </section>
+  <hr>
+  <p class="copyright">&copy; Copyright 2024 Fresh Details</p>
+</footer>
+</body>
+</html>
+
+

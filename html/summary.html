@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="../css/summary1.css">
+    <link rel="manifest" href="../manifest.json"/>
+</head>
+<body>
+<!-- Header Section -->
+<header class="header">
+    <section class="container">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">
+                <img src="../images/unnamed (1).png" width="100px" alt="Logo">
+            </a>
+            <input type="checkbox" id="menubtn" class="menubtn">
+             <label for="menubtn" class="menuicon">
+             <div class="navicon"></div>
+             </label>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <select onchange="location = this.value;">
+                        <option value="productsdai.html">Dairy Products</option>
+                        <option value="productscos.html">Cosmetic items</option>
+                        <option value="productsveg.html">Vegitables</option>
+                        <option value="Fruits.html">Fruits</option>
+                        <option value="meatandseafood.html">Meat and Sea Food</option>
+                        <option value="Bakingandcooking.html">Baking and Cooking Ingredients</option>
+                    </select>
+                </li>
+                <li><a href="../html/about-index.html">About</a></li>
+                <li><a href="../html/loyalty.html">Loyalty</a></li>
+                <li><a href="../html/account.html">Account</a></li>
+            </ul>
+            <a href="../html/orderpage.html"><img src="../images/cart.png" width="30px" height="30px" class="cart" alt="Cart"></a>
+        </nav>
+    </section>
+</header>
+
+    <h1>Order Summary</h1>
+    <table id="order-summary-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Order items will be added here dynamically -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="summary-total-price">0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form id="details-form">
+        <h2>Enter Your Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="address">Delivery Address:</label>
+        <input type="text" id="address" name="address" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <h3>Delivery Information</h3>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="date">Preferred Delivery Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <h3>Payment Information</h3>
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" required>
+        
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="month" id="expiry-date" name="expiry-date" required>
+        
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required>
+        
+        <button type="button" id="pay-button">Pay</button>
+    </form>
+    <div id="thank-you-message" style="display: none;">
+        <h2>Thank you for your purchase!</h2>
+        <p>Your order will be delivered on: <span id="delivery-date"></span></p>
+        <p>Order Summary:</p>
+        <p>Name: <span id="summary-name"></span></p>
+        <p>Address: <span id="summary-address"></span></p>
+        <p>Email: <span id="summary-email"></span></p>
+        <p>Phone: <span id="summary-phone"></span></p>
+        <p>Preferred Delivery Date: <span id="summary-preferred-date"></span></p>
+    </div>
+
+    <script src="../js/summry.js"></script>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <section class="container">
+        <section class="grid">
+            <article>
+                <h3>Download Our App</h3>
+                <p>Download app for Android and iOS mobile phone.</p>
+                <figure class="app-logo">
+                    <img src="../images/play-store.png" alt="Play Store">
+                    <img src="../images/app-store.png" alt="App Store">
+                </figure>
+            </article>
+            <article>
+                <img src="../images/unnamed (1).png" alt="Logo">
+                <p>Way to the home</p>
+            </article>
+            <article>
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </article>
+        </section>
+    </section>
+    <hr>
+    <p class="copyright">&copy; Copyright 2024 Fresh Details</p>
+  </footer>
+</body>
+</html>
